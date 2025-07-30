@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesvia - Inicio</title>
 </head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
 <link rel="stylesheet" href="./styles/styles.css">
 <body>
@@ -31,6 +32,29 @@
     </header>
     <img src="./assets/foto para inicio.png" alt="">
     <main>
+        <div id="carruselLesvia" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carruselLesvia" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carruselLesvia" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carruselLesvia" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/lesbiana-siglo-XIX-lesbianismo-historia.png" class="d-block w-100" alt="Primera imagen">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images.png" class="d-block w-100" alt="Segunda imagen">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselLesvia" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselLesvia" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
         <section class="destacado">
             <h1>Lesvia es un espacio creado con y para nosotras</h1>
             <p>Nos proponemos pensar juntas cómo se representan los vínculos entre mujeres en el cine y la televisión. ¿Quién cuenta nuestras historias? ¿Qué estereotipos persisten? ¿Qué relatos nos hacen falta?</p>
@@ -47,6 +71,6 @@
         </a>
 
     </footer>
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>   
 </body>
 </html>
