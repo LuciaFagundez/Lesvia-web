@@ -1,0 +1,54 @@
+// colores
+$color-primary: #FDA22C;
+$color-secondary: #d9d9d9;
+$color-dark: #131313;
+$color-light: #ffffff;
+$color-grey: #ccc;
+
+// tipografia
+$font-main: "inter", sans-serif;
+@font-face {
+    font-family: inter;
+    src: url(../assets/inter.ttf);
+}
+
+
+
+h1 {font-family: inter, bold;}
+h2 {font-family: inter, medium;}
+h3 {font-family: inter, regular;}
+p {font-family: inter, light;}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+//tamaños
+$spacing-unit: 1rem;
+$border-radius: 8px;
+$max-width-container: 1200px;
+
+//breakpoints
+$bp-mobile: 460px;
+
+@mixin mobile{
+    @media (max-width: 460px){
+        @content;
+    }
+}
+
+@mixin container {
+    max-width: $max-width-container;
+    margin: 0 auto;
+    padding: 0 $spacing-unit;
+}
+
+
+@mixin transition($props...) {
+    transition: $props 0.3s ease;
+}
+

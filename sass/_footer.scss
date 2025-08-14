@@ -1,0 +1,15 @@
+@use "variables" as v;
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    padding: v.$spacing-unit;
+
+}
+
+.gmail,
+.instagram {
+    width: 7vh;
+    height: auto;
+}

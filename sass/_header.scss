@@ -1,0 +1,51 @@
+@use "variables" as v;
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; 
+    padding: 0 2rem; 
+    width: 100%;
+    margin: 2rem auto 0 auto;
+    max-width: 1200px;
+
+    .logo {
+        width: 40vh; 
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 5rem;
+}
+.menu ul li{
+    border: 1px solid v.$color-dark;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.menu ul li:hover{
+    background-color: v.$color-primary;
+    color: v.$color-light;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: v.$color-dark;
+}
+
+@include v.mobile{
+    .menu ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+}
